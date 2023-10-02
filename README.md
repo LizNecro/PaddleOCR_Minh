@@ -62,3 +62,4 @@ docker run -v test_data:/data/test_data:ro submission_output:/data/submission_ou
 ```
 
 
+# PaddleOCR_Minh
