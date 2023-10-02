@@ -1,7 +1,6 @@
 # PaddleOCR-Vietnamese
 Scene text vietnamese
 
-Link blog: http://tutorials.aiclub.cs.uit.edu.vn/index.php/2022/04/20/nhan-dang-chu-tieng-viet-trong-anh-ngoai-canh/
 # Setup
 ```bash
 pip install -r requirements.txt
@@ -52,13 +51,7 @@ python3 /content/drive/MyDrive/PaddleOCR/PaddleOCR/tools/infer/predict_system.py
                 --drop_score=0.7 \
                 --rec_char_dict_path="./ppocr/utils/dict/vi_vietnam.txt"
 ```
-# Build docker image
-```bash
-docker build -t sast_srn .
-```
-Run docker image
-```bash
-docker run -v test_data:/data/test_data:ro submission_output:/data/submission_output sast_srn /bin/bash run.sh
+
 ```
 
 
