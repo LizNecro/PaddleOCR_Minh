@@ -403,12 +403,14 @@ def train(config,
                 logger,
                 config,
                 is_best=False,
-                prefix='iter_epoch_{}'.format(epoch),
+                prefix='iter_epoch',
+                # prefix='iter_epoch_{}'.format(epoch),
                 best_model_dict=best_model_dict,
                 epoch=epoch,
                 global_step=global_step)
             if log_writer is not None:
-                log_writer.log_model(is_best=False, prefix='iter_epoch_{}'.format(epoch))
+                log_writer.log_model(is_best=False, prefix='iter_epoch')
+                # log_writer.log_model(is_best=False, prefix='iter_epoch_{}'.format(epoch))
 
     best_str = 'best metric, {}'.format(', '.join(
         ['{}: {}'.format(k, v) for k, v in best_model_dict.items()]))
