@@ -470,7 +470,7 @@ def train(config,
                 config,
                 is_best=False,
                 prefix='a',
-                prefix='iter_epoch_{}'.format(epoch),
+                # prefix='iter_epoch_{}'.format(epoch),
                 best_model_dict=best_model_dict,
                 epoch=epoch,
                 global_step=global_step)
