@@ -99,11 +99,11 @@ class SASTProcessTrain(object):
             quad = self.gen_quad_from_poly(poly)
             p_area = self.quad_area(quad)
             if abs(p_area) < 1:
-                print('invalid poly')
+                # print('invalid poly')
                 continue
             if p_area > 0:
                 if tag == False:
-                    print('poly in wrong direction')
+                    # print('poly in wrong direction')
                     tag = True  # reversed cases should be ignore
                 poly = poly[(0, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2,
                              1), :]
