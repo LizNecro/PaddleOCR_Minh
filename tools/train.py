@@ -93,7 +93,7 @@ def main(config, device, logger, vdl_writer):
                             'DistillationSARLoss'][
                                 'ignore_index'] = char_num + 1
                         out_channels_list['SARLabelDecode'] = char_num + 2
-                    elif list(config['Loss']['loss_config_list'][-1].keys())[
+                    elif list(config['Loss']['loss_config_list'][-2].keys())[
                             0] == 'DistillationNRTRLoss':
                         out_channels_list['NRTRLabelDecode'] = char_num + 3
 
