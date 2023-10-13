@@ -87,7 +87,7 @@ def main(config, device, logger, vdl_writer):
                     out_channels_list = {}
                     out_channels_list['CTCLabelDecode'] = char_num
                     # update SARLoss params
-                    if list(config['Loss']['loss_config_list'][-1].keys())[
+                    if list(config['Loss']['loss_config_list'][-2].keys())[
                             0] == 'DistillationSARLoss':
                         config['Loss']['loss_config_list'][-1][
                             'DistillationSARLoss'][
